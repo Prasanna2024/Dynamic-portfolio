@@ -1,0 +1,96 @@
+.page_container {
+    /* background-color: white; */
+    height: 100vh;
+    width: 90%;
+    padding-top: 1%;
+    margin: auto;
+    color: black;
+    align-items: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+
+}
+
+.inner {
+    animation: slideAnimation 1s cubic-bezier(1, -0.48, 0.61, 2.12);
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+@keyframes slideAnimation {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+
+.image {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.socialmediaicons {
+    cursor: pointer;
+}
+
+.linkedin:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(5, 5, 148);
+    border-radius: 5px;
+
+}
+.leetcode:hover {
+    color:#fea116;
+    border-radius: 5px;
+}
+.github:hover{
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+.instagram:hover 
+{
+    border-radius: 5px;
+    background: linear-gradient(blue,violet,orange,red);
+}
+
+.profilepic
+{
+    height: 70%;
+    width: 70%;
+    border-radius: 50px 0px 50px 0px;  
+    animation:  imageSlide 0.8s cubic-bezier(1, -0.48, 0.61, 2.12);
+}
+
+@keyframes imageSlide {
+    0%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}

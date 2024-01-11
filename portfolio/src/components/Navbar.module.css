@@ -1,0 +1,25 @@
+.header 
+{
+  width: 100%;
+  border-bottom: solid white 1px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 10vh;
+}
+
+.inner 
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.link 
+{
+  text-decoration: none;
+  color: #ffd43b;
+  font-size: medium;
+  margin: 5px;
+}
